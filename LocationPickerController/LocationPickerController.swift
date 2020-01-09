@@ -58,6 +58,7 @@ open class LocationPickerController: UIViewController {
         self.mapView = MKMapView(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height))
         self.mapView.showsUserLocation = true
         self.mapView.delegate = self
+        self.mapView.mapType = .satellite
         self.mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         self.view.addSubview(self.mapView)
     }
